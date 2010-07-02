@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>applications-other.png</file>
+        <file>plasma.png</file>
+        <file>preferences-plugin.png</file>
+        <file>repository.png</file>
+        <file>system-software-update.png</file>
+        <file>view-media-visualization.png</file>
+        <file>konqui1.jpg</file>
+        <file>edit-find.png</file>
+        <file>logo.png</file>
+        <file>xmag.png</file>
+        <file>applications-multimedia.png</file>
+        <file>applications-system.png</file>
+    </qresource>
+</RCC>
