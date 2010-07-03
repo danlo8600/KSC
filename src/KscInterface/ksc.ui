@@ -313,6 +313,18 @@ p, li { white-space: pre-wrap; }
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>pushButton_3</tabstop>
+  <tabstop>pushButton</tabstop>
+  <tabstop>pushButton_2</tabstop>
+  <tabstop>pushButton_4</tabstop>
+  <tabstop>pushButton_6</tabstop>
+  <tabstop>textBrowser</tabstop>
+  <tabstop>comboBox</tabstop>
+  <tabstop>pushButton_7</tabstop>
+  <tabstop>listWidget</tabstop>
+  <tabstop>listWidget_3</tabstop>
+ </tabstops>
  <resources>
   <include location="../../images/image.qrc"/>
  </resources>
