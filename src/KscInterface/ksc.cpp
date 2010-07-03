@@ -2,6 +2,8 @@
 
 #include "ksc.h"
 #include "ui_ksc.h"
+#include "kdebug.h"
+#include "networkconnectionmanager.h"
 
 #include <iostream>
 using namespace std;
