@@ -7,18 +7,27 @@ VERSION = 0.1
 TEMPLATE = app
 TARGET = ksc_$$VERSION
 DEPENDPATH += . images src/KscInterface
-INCLUDEPATH += . src/KscInterface
-INCLUDEPATH += /usr/include/PackageKit/packagekit-qt/
+INCLUDEPATH += . src/KscInterface\
+    . src/libraries\
+     /usr/include/PackageKit/packagekit-qt/
 
 LIBS += /usr/lib/libpackagekit-qt.so
+LIBS += -lkdeui
+
+
+
 
 QT += core gui\
     dbus\
     sql\
-     xml
+     xml\
+    svg\
+    network
 
 # Input
-HEADERS += src/KscInterface/ksc.h
+HEADERS += src/KscInterface/ksc.h \
+    src/libraries/networkconnectionmanager.h
 FORMS += src/KscInterface/ksc.ui
-SOURCES += src/KscInterface/ksc.cpp src/KscInterface/main.cpp
+SOURCES += src/KscInterface/ksc.cpp src/KscInterface/main.cpp \
+    src/libraries/networkconnectionmanager.cpp
 RESOURCES += images/image.qrc
