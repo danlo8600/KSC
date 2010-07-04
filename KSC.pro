@@ -12,7 +12,8 @@ INCLUDEPATH += . src/KscInterface\
      /usr/include/PackageKit/packagekit-qt/
 
 LIBS += /usr/lib/libpackagekit-qt.so
-LIBS += -lkdeui
+LIBS += -lkdeui\
+    -lsolid
 
 
 
