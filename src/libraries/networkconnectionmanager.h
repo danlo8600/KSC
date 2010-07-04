@@ -6,11 +6,7 @@
 /**
   * @author simag
   * @version 0.1
-
-  * @note 1: ToDo: request migration to solid
-
   * @note this class use KDE Solid
-
   * This class check if there are a network intervace aviable and store information about his status
   */
 class NetworkConnectionManager : public QObject
@@ -23,7 +19,7 @@ public:
     bool isNetworkAvailable();
 
 private:
-    //void findNetworkInterface();
+    void findNetworkInterface();
 
 signals:
 

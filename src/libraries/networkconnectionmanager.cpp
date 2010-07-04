@@ -24,9 +24,11 @@ NetworkConnectionManager::~NetworkConnectionManager()
 }
 
 
-// ToDo: migrate to solid
-/*
 
+/**
+  * Find the network interface that work,
+  * @todo doesn't work, it's incomplete...
+  */
 void NetworkConnectionManager::findNetworkInterface()
 {
     // get a  list of network interface ( list from type require a solid device interface type )
@@ -37,7 +39,7 @@ void NetworkConnectionManager::findNetworkInterface()
      {
         kDebug() << "No network devices found!";
     }
-}*/
+}
 
 
 
@@ -49,20 +51,18 @@ void NetworkConnectionManager::findNetworkInterface()
 bool NetworkConnectionManager::isNetworkAvailable()
 {
 
-    //ToDo migrate to solid
-
-    /*
     if ( Solid::Networking::status() == Solid::Networking::Connected )
     {
-        kDebug() << " Status connected, netwrok available";
+        // network is available
+        kDebug() << "Solid Status connected, network available";
         return true;
     }
     else
     {
         return false;
     }
-    */
 
+    /*
     PackageKit::Client  * packagekitClient = NULL;
     packagekitClient = PackageKit::Client::instance();
 
@@ -76,5 +76,5 @@ bool NetworkConnectionManager::isNetworkAvailable()
     {
         return false;
     }
-
+    */
 }
