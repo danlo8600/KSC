@@ -25,9 +25,6 @@ public:
 private:
     //void findNetworkInterface();
 
-    bool isNetworkAvailable();
-
-
 signals:
 
 public slots:
