@@ -18,17 +18,22 @@ NetworkConnectionManager::NetworkConnectionManager(QObject *parent) :
 {    
 }
 
-
+<<<<<<< HEAD
 NetworkConnectionManager::~NetworkConnectionManager()
 {
 }
 
 
 // ToDo: migrate to solid
-/*
+/*void NetworkConnectionManager::findNetworkInterface()
+{
+
+=======
 
 void NetworkConnectionManager::findNetworkInterface()
 {
+    /*
+>>>>>>> 4e548e784c356e053f8ed954bf6ed0f2e8300418
     // get a  list of network interface ( list from type require a solid device interface type )
     QList<Solid::Device> networkDeviceList = Solid::Device::listFromType( Solid::DeviceInterface::NetworkInterface, QString() );
 
@@ -37,9 +42,15 @@ void NetworkConnectionManager::findNetworkInterface()
      {
         kDebug() << "No network devices found!";
     }
+<<<<<<< HEAD
+
+
 }*/
+=======
+    */
 
-
+}
+>>>>>>> 4e548e784c356e053f8ed954bf6ed0f2e8300418
 
 
 /**
@@ -48,9 +59,11 @@ void NetworkConnectionManager::findNetworkInterface()
   */
 bool NetworkConnectionManager::isNetworkAvailable()
 {
+<<<<<<< HEAD
 
     //ToDo migrate to solid
-
+=======
+>>>>>>> 4e548e784c356e053f8ed954bf6ed0f2e8300418
     /*
     if ( Solid::Networking::status() == Solid::Networking::Connected )
     {
