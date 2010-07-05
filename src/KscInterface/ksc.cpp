@@ -4,6 +4,8 @@
 
 #include "ksc.h"
 #include "ui_ksc.h"
+#include "kdebug.h"
+#include "networkconnectionmanager.h"
 
 #include <iostream>
 using namespace std;
@@ -12,6 +14,13 @@ ksc::ksc(QWidget *parent) :
     QMainWindow(parent)
 {
     setupUi(this);
+    
+    NetworkConnectionManager *net;
+    net = new NetworkConnectionManager();
+    if (net->isNetworkAvailable())
+        kDebug() <<"solid funziona...";
+    else
+        kDebug()<<"no";
 }
 
 ksc::~ksc()

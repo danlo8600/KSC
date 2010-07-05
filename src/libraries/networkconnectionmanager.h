@@ -15,6 +15,7 @@ class NetworkConnectionManager : public QObject
 
 public:
     NetworkConnectionManager(QObject *parent = 0);
+    ~NetworkConnectionManager();
     bool isNetworkAvailable();
 
 private:
