@@ -1,4 +1,6 @@
 #include <QtGui>
+#include <QResource>
+ #include <QString>
 
 #include "ksc.h"
 #include "ui_ksc.h"
@@ -31,35 +33,37 @@ void ksc::changeEvent(QEvent *e)
 void ksc::on_btnSoftware_clicked()
 {
     //TODO: Call PackageKit for "software view".
-    cout << "Click! I show you Software" << endl;
+    mainIcon->setPixmap(QPixmap(":/buttons/applications-other.png"));
+
+
 }
 
 void ksc::on_btnCodec_clicked()
 {
     //TODO: Implement a "Codec View".
-    cout << "Click! I show you Codecs!" << endl;
+    mainIcon->setPixmap(QPixmap(":/buttons/applications-multimedia.png"));
 }
 
 void ksc::on_btnAdvance_clicked()
 {
     //TODO: Implement an Advance View.
-    cout << "Click! I show you Advanced View!" << endl;
+    mainIcon->setPixmap(QPixmap(":/buttons/applications-system.png"));
 }
 
 void ksc::on_btnUpdate_clicked()
 {
     //TODO: Implement an Advance View.
-    cout << "Click! I show you Update monitor!" << endl;
+    mainIcon->setPixmap(QPixmap(":/buttons/system-software-update.png"));
 }
 
 void ksc::on_btnSource_clicked()
 {
     //TODO: What is "Source"?
-    cout << "Click! I show you Source.... ?" << endl;
+    mainIcon->setPixmap(QPixmap(":/buttons/repository.png"));
 }
 
 void ksc::on_btnSearch_clicked()
 {
     //TODO: Implement search and search-view.
-    cout << "Click! I search for you... but I'm broken!" << endl;
+    mainIcon->setPixmap(QPixmap(":/buttons/xmag.png"));
 }
