@@ -28,32 +28,14 @@
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="1" column="0">
-     <widget class="QFrame" name="frameSide">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
+    <item row="0" column="0">
+     <widget class="QLabel" name="mainIcon">
+      <property name="text">
+       <string/>
       </property>
-      <property name="frameShape">
-       <enum>QFrame::StyledPanel</enum>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
-      <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout">
-       <item>
-        <widget class="QListWidget" name="listBoh">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-        </widget>
-       </item>
-      </layout>
      </widget>
     </item>
     <item row="0" column="1">
@@ -169,6 +151,34 @@
       </layout>
      </widget>
     </item>
+    <item row="1" column="0">
+     <widget class="QFrame" name="frameSide">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QListWidget" name="listBoh">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
     <item row="1" column="1">
      <widget class="QFrame" name="frameView">
       <property name="sizePolicy">
@@ -250,16 +260,6 @@
         </layout>
        </item>
       </layout>
-     </widget>
-    </item>
-    <item row="0" column="0">
-     <widget class="QLabel" name="mainIcon">
-      <property name="text">
-       <string/>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
      </widget>
     </item>
    </layout>
